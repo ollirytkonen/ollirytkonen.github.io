@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Olli Rytkönen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header">
+    <div class="top-nav">
+        <ul>
+          <li><a href="./index.html">Etusivu</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./about.html">Yhteystiedot</a></li>
+        </ul>
+        
+        <img src="./images/dark-mode.png" id="icon">
+        
+    </div>
+
+    <div class="text-box">
+      <h1>Projektit</h1>
+      <p>Täältä löydät mun viime aikaiset projektit!</p>
+    </div>
+    <!-- Write your comments here
+    <button class="top-nav button">Ota yhteyttä</button> -->
+  
+  </div>
+
+  <script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+      console.log("click");
+      document.body.classList.toggle("dark-theme");
+      if(document.body.classList.contains("dark-theme")){
+          icon.src = "./images/light-mode.png";
+        }else{
+          icon.src = "./images/dark-mode.png";
+        }
+      
+    }
+  </script>
+
+<script src="./darkmode.js"></script>
+</body>
+</html>
