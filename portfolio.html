@@ -13,7 +13,7 @@
 
   <div class="header">
     <div class="top-nav">
-        <ul>
+      <ul class="nav-links">
           <li><a href="./index.html">Etusivu</a></li>
           <li><a href="./portfolio.html">Portfolio</a></li>
           <li><a href="./about.html">Yhteystiedot</a></li>
@@ -40,7 +40,7 @@
     var icon = document.getElementById("icon");
 
     icon.onclick = function(){
-      console.log("click");
+      
       document.body.classList.toggle("dark-theme");
       if(document.body.classList.contains("dark-theme")){
           icon.src = "./images/light-mode.png";
@@ -50,7 +50,7 @@
       
     }
   </script>
-
+ <script src="./main.js"></script>
 <script src="./darkmode.js"></script>
 </body>
 </html>
