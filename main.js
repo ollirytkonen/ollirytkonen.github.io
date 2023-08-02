@@ -1,19 +1,18 @@
+
+
 const navSlide = () => {
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
 
-
+    const navActive = document.querySelector('.nav-active');
 
     hamburger.addEventListener('click', () => {
         
+        console.log("click");
         nav.classList.toggle('nav-active');
+        navActive.style.display ="block";
     });
 
-    navLinks.forEach( (link, index) =>{
-        
-        link.style.animation = 'navLinkFade 0.5 ease forwards' + index / 7 + 's';
-    });
 }
 
 navSlide();

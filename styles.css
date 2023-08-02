@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 :root{
-
   --primary-color: #ffffff;
   --secondary-color: #000000;
 }
@@ -41,13 +40,13 @@ body{
   margin-right: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 .top-nav ul li a {
   text-decoration: none;
   color: var(--secondary-color);
   font-size: 15px;
   transition: font-size 1s;
+  
 }
 
 .top-nav ul li a:hover{
@@ -58,7 +57,9 @@ body{
   width: 30px;
   cursor: pointer;
 }
-
+.top-nav .icon {
+  display: none;
+}
 .top-nav button{
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -71,8 +72,10 @@ body{
 
 .text-box{
   margin-top: 12%;
+  
   font-size: 18px;
   color: var(--secondary-color);
+  
 }
 
 .text-box h1{
@@ -83,7 +86,16 @@ body{
   margin-top: 10px;
   margin-bottom: 30px;
 }
-
+.headshot {
+  border-radius: 8px;
+}
+.profiilikuva{
+  margin-top: 10%;
+  float: right;
+  
+  height: 170px;
+  width: 170px;
+}
 .hamburger{
   display: none;
   cursor: pointer;
@@ -94,63 +106,25 @@ body{
   background-color: var(--secondary-color);
   margin: 5px;
 }
-
-@media screen and (max-width: 768px){
-  body{
-    overflow-x: hidden;
-  }
-  .hamburger{
-    display: block;
-  }
-  .nav-links{
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color:var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: 1s;
-  }
-  
-  .nav-links li{
-    opacity: 1;
-  }
-  .nav-links a{
-    opacity: 1;
-  }
-  .text-box{
-    margin-top: 12%;
-    font-size: 15px;
-    color: var(--secondary-color);
-  }
-  .text-box h1{
-    font-weight: 500;
-    font-size: 40px;
-    max-width: 550px;
-    line-height: 95px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-  }
-  .text-box, .top-nav{
-    width: 100%;
-  }
+.kuva{
+  height: 170px;
+  width: 170px;
 }
 
-.nav-active{
-  transform: translateX(0%);
+.appkuva{
+  box-shadow: 0 4px 8px 0 var(--secondary-color);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5px;
 }
-
-@keyframes navLinkFade{
-  from{
-    opacity: 0;
-    transform: translate(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translate(0px);
-  }
+.appkuva:hover{
+  box-shadow: 0 8px 16px 0 var(--secondary-color);
+}
+.appinfo {
+  padding: 2px 16px;
+  padding-bottom: 20px;
+  color: var(--secondary-color);
+}
+img {
+  border-radius: 5px 5px 0 0;
 }
