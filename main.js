@@ -1,18 +1,12 @@
 
 
-const navSlide = () => {
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('.nav-links');
+function myFunction() {
 
-    const navActive = document.querySelector('.nav-active');
-
-    hamburger.addEventListener('click', () => {
-        
-        console.log("click");
-        nav.classList.toggle('nav-active');
-        navActive.style.display ="block";
-    });
-
-}
-
-navSlide();
+    var x = document.getElementById("myMobileLinks");
+    if (x.style.display === "block") {
+        console.log("block");
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
