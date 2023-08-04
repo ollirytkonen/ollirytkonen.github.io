@@ -16,22 +16,22 @@
 body{
   background-color: var(--primary-color);
 }
-.column {
+.columnport {
   width: 100%;
   display: block;
   margin-bottom: 20px;
 }
-.column {
+.columnport {
   float: left;
   width: 25%;
   padding: 0 10px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.rowport {margin: 0 -5px;}
 
 /* Clear floats after the columns */
-.row:after {
+.rowport:after {
   content: "";
   display: table;
   clear: both;
@@ -107,15 +107,12 @@ body{
   font-size: 18px;
   color: var(--secondary-color);
 }
-
-.text-box h1{
-  font-weight: 500;
-  font-size: 76px;
-  max-width: 550px;
-  line-height: 95px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+.infotext-box{
+  margin-top: 2%;
+  font-size: 18px;
+  color: var(--secondary-color);
 }
+
 .headshot {
   border-radius: 8px;
 }
@@ -154,7 +151,16 @@ img {
   border-radius: 5px 5px 0 0;
   width: 100%;
 }
-
+.olli{
+  width: 420px;
+ height: 400px;
+ border-radius: 50%;
+}
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid lightblue;
+}
 @media screen and (max-width: 800px) {
   .header{
     width: 100%;
@@ -168,26 +174,20 @@ img {
   }
   .text-box{
     margin-top: 12%;
-    font-size: 15px;
+    font-size: 12px;
     color: var(--secondary-color);
   }
-  .text-box h1{
-    font-weight: 200;
-    font-size: 40px;
-    max-width: 550px;
-    line-height: 95px;
-    margin-top: 10%;
-  }
-  .column {
+ 
+  .columnport {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
   /* Remove extra left and right margins, due to padding in columns */
-  .row {margin: 0 -5px;}
+  .rowport {margin: 0 -5px;}
   
   /* Clear floats after the columns */
-  .row:after {
+  .rowport:after {
     content: "";
     display: table;
     clear: both;
@@ -255,6 +255,11 @@ img {
   text-decoration: none;
   font-size: 17px;
   display: block;
+}
+.olli{
+  width: 200px;
+  height: 170px;
+  display: none;
 }
 
 }
