@@ -112,6 +112,9 @@ body{
   font-size: 18px;
   color: var(--secondary-color);
 }
+.infotext-box p a i{
+  color: var(--secondary-color);
+}
 
 .headshot {
   border-radius: 8px;
@@ -160,6 +163,9 @@ img {
   column-count: 3;
   column-gap: 40px;
   column-rule: 1px solid lightblue;
+}
+i{
+  text-decoration: none;
 }
 @media screen and (max-width: 800px) {
   .header{
