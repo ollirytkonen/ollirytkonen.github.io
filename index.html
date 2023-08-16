@@ -12,35 +12,69 @@
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 </head>
 
-<body class="wrapper">
-  <div class="header">
-      <div class="top-nav" id="myTopnav">
-            <ul class="nav-links">
-              <li><a href="./index.html">Etusivu</a></li>
-              <li><a href="./portfolio.html">Portfolio</a></li>
-              <li><a href="./about.html">Yhteystiedot</a></li>
-            </ul>
-            <img src="./images/dark-mode.png" id="icon">
-            <div class="hamburger-lines" onclick="myFunction()">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
+<body>
+      <div class="site-content">
+        <div class="header">
+          <div class="top-nav" id="myTopnav">
+                <ul class="nav-links">
+                  <li><a href="./index.html">Etusivu</a></li>
+                  <li><a href="/index.html">Portfolio</a></li>
+                  <li><a href="/index.html">Yhteystiedot</a></li>
+                </ul>
+                <img src="./images/dark-mode.png" id="icon">
+                <div class="hamburger-lines" onclick="myFunction()">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+              </div>
+          </div>
+          <div class="topmobile-nav" id="myTopmobilenav">
+              <ul class="navmobile-links" id="myMobileLinks">
+                <li><a href="./index.html">Etusivu</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./about.html">Yhteystiedot</a></li>
+              </ul>             
           </div>
       </div>
-      <div class="topmobile-nav" id="myTopmobilenav">
-          <ul class="navmobile-links" id="myMobileLinks">
-            <li><a href="./index.html">Etusivu</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./about.html">Yhteystiedot</a></li>
-          </ul>             
+
+        <div class="site-box">
+
+          <div class="text-box">
+            <p>Tervetuloa</p>
+            <h1>Mun nimi on Olli Rytkönen!</h1>
+          </div>
+        </div>
+
+        <div class="site-box">
+
+          <div class ="portfolio-box">
+            <h2>Projektit</h2>
+            <div class="card">
+                  <a href="https://celadon-semifreddo-1be182.netlify.app/">
+                    <img src="./images/app2.JPG" class="reactkuva"alt="Avatar">
+                  </a>
+                  <div class="appinfo">
+                    <h3><b>Hamburger-App</b></h3> 
+                    <p>Angular</p>
+                    <p>Angular, Node, Express, MongoDb</p>
+                    </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="site-box">
+          <div class="infotext-box">
+            <img class="olli" src="./images/test21.png" alt="olli">
+            <h1>Yhteystiedot</h1>
+            <p><i class="fa-solid fa-user"></i> Olli Rytkönen</p>
+            <p><i class="fa-regular fa-envelope"></i> olliryt00@gmail.com</p>
+            <p><a href="https://www.linkedin.com/in/olli-rytk%C3%B6nen-37b927178/"><i class="fa-brands fa-linkedin fa-beat" aria-hidden="true"></i></a>Linkedin</p>
+            <p><a href="https://github.com/ollirytkonen?tab=repositories"><i class="fa-brands fa-github fa-bounce"></i></a> GitHub</p>
+          </div>
+        </div>
       </div>
-      <div class="text-box">
-          <p>TERVETULOA!</p>
-          <h1>Mun nimi on Olli Rytkönen!</h1>
-          <p>Etsin juoniori devaajan paikkaa! Fullstack kiinnostaa erityisesti!</p>
-          <p>Tämä sivusto on toteutettu HTML/CSS/JavaScript yhdistelmällä.</p>
-      </div>
-  </div>
+
   <script src="./main.js"></script>
   <script src="./darkmode.js"></script>
 </body>
