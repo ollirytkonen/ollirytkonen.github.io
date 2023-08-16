@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a9a7721e52.js" crossorigin="anonymous"></script>
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 </head>
 
@@ -18,8 +19,8 @@
           <div class="top-nav" id="myTopnav">
                 <ul class="nav-links">
                   <li><a href="./index.html">Etusivu</a></li>
-                  <li><a href="/index.html">Portfolio</a></li>
-                  <li><a href="/index.html">Yhteystiedot</a></li>
+                  <li><a href="#portfolio-box">Portfolio</a></li>
+                  <li><a href="#infotext-box">Yhteystiedot</a></li>
                 </ul>
                 <img src="./images/dark-mode.png" id="icon">
                 <div class="hamburger-lines" onclick="myFunction()">
@@ -31,41 +32,41 @@
           <div class="topmobile-nav" id="myTopmobilenav">
               <ul class="navmobile-links" id="myMobileLinks">
                 <li><a href="./index.html">Etusivu</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./about.html">Yhteystiedot</a></li>
+                <li><a href="#portfolio-box">Portfolio</a></li>
+                <li><a href="#infotext-box">Yhteystiedot</a></li>
               </ul>             
           </div>
       </div>
 
         <div class="site-box">
-
           <div class="text-box">
-            <p>Tervetuloa</p>
-            <h1>Mun nimi on Olli Rytkönen!</h1>
+            <div>
+              <img class="text-box-image" src="./images/test21.png" alt="olli">
+            </div>
+            <div class="welcome-text">
+              <p>Tervetuloa</p>
+              <h1>Mun nimi on Olli Rytkönen!</h1>
+            </div>    
           </div>
+         
         </div>
-
         <div class="site-box">
+            <div class="card-box">
+              <h2>Projektit</h2>
 
-          <div class ="portfolio-box">
-            <h2>Projektit</h2>
-            <div class="card">
                   <a href="https://celadon-semifreddo-1be182.netlify.app/">
                     <img src="./images/app2.JPG" class="reactkuva"alt="Avatar">
                   </a>
-                  <div class="appinfo">
+                  <div>
                     <h3><b>Hamburger-App</b></h3> 
                     <p>Angular</p>
                     <p>Angular, Node, Express, MongoDb</p>
-                    </div>
+                  </div>
             </div>
-          </div>
-
         </div>
 
         <div class="site-box">
-          <div class="infotext-box">
-            <img class="olli" src="./images/test21.png" alt="olli">
+          <div class="infotext-box" id="infotext-box">
             <h1>Yhteystiedot</h1>
             <p><i class="fa-solid fa-user"></i> Olli Rytkönen</p>
             <p><i class="fa-regular fa-envelope"></i> olliryt00@gmail.com</p>
@@ -73,9 +74,9 @@
             <p><a href="https://github.com/ollirytkonen?tab=repositories"><i class="fa-brands fa-github fa-bounce"></i></a> GitHub</p>
           </div>
         </div>
+
       </div>
 
   <script src="./main.js"></script>
-  <script src="./darkmode.js"></script>
 </body>
 </html>
