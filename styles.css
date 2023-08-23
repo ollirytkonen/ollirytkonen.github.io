@@ -1,221 +1,62 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
+#site-wrapper{
+  background-color: rgb(255, 255, 255);
 }
-:root{
-  --primary-color: #ffffff;
-  --secondary-color: #000000;
+#welcome-box{
+  margin-top: 15%;
+  height: 700px;
 }
-.dark-theme{
-  --primary-color: #000000;
-  --secondary-color: #ffffff;
-}
+
 body{
-  background-color: var(--primary-color);
+  background-color: rgb(255, 255, 255);
 }
-.site-content{
-  margin-left: 20%;
-  margin-right: 20%;
-}
-.header{
-  background-color: var(--primary-color);
-}
-.navmobile-links{
-  display: none;
-}
-.top-nav{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 0 15px;
-  border-bottom: 1px solid var(--secondary-color);
-}
-.topmobile-nav{
-  display: none;
-}
-.top-nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.top-nav ul li a {
-  text-decoration: none;
-  color: var(--secondary-color);
-  font-size: 15px;
-  transition: font-size 1s;
-}
-.top-nav ul li a:hover{
-  font-size: 16px;
-}
-.hamburger-lines{
-  display: none;
-}
-#icon{
-  width: 30px;
-  cursor: pointer;
-}
-.top-nav .icon {
-  display: none;
-}
-.top-nav button{
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border: 0;
-  outline: 0;
-  border-radius: 30px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-.site-box{
-  height: 850px;
-  width: min(90%, 1920px);
-  display: flex;
-}
-.card{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  border-radius: 5px;
-  padding: 2px 16px;
-}
-.appinfo{
-  width: 40%;
-}
-.portfolio-box{
-  display: flex;
-}
-
-.text-box{
-  color: var(--secondary-color);
-  padding: 10%;
-}
-.infotext-box{
-  padding: 10%;
-  font-size: 18px;
-  color: var(--secondary-color);
-}
-.infotext-box p a i{
-  color: var(--secondary-color);
-}
-.portfolio-box{
-  padding: 20%;
-}
-.card-box {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: var(--primary-color);
-  height: 400px;
-  color: var(--secondary-color);
-}
-.reactkuva{
-  height: 150px;
-  width: 150px;
-}
-.appkuva{
-  box-shadow: 0 4px 8px 0 var(--secondary-color);
-  transition: 0.3s;
-  width: 20%;
-  border-radius: 5px;
-}
-.appkuva:hover{
-  box-shadow: 0 8px 16px 0 var(--secondary-color);
-}
-.appinfo {
-  padding: 2px 16px;
-  padding-bottom: 20px;
-  color: var(--secondary-color);
-  width: 100%;
-}
-
-i{
-  text-decoration: none;
-}
-
-@media screen and (max-width: 800px) {
-  .site-content{
-    margin-left: 5%;
-    margin-right: 5%;
+#olli{
+  border-radius: 40%;
   }
-  .text-box-image{
-    width: 100%;
+  #portfolio-box{
+    margin-top: 15%;
     height: 700px;
   }
-.olli{
-  height: 140px;
-  width: 140px;
+  #about-box{
+    margin-top: 40%;
+    margin-bottom: 20%;
+    height: 700px;
+  }
+#cv-box{
+  margin-top: 50%;
+  height: 700px;
 }
-.welcome-text{
-  margin-top: 80%;
+#mushroom-image{
+  border: solid;
+  border-radius: 2px;
 }
-.card-box{
-  margin: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-}
-.site-box{
-  display: block;
-  height: 844px;
-}
-.portfolio-box{
-  display: block;
-  font-size: 10px;
-}
-.text-box-image{
-  margin-top: 10%;
-  height: 140px;
-  width: 140px;
-}
-.top-nav ul{
-    display: none;
-}
-.hamburger-lines{
-  display: flex;
-  cursor: pointer;
-  height: 26px;
-  width: 32px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.hamburger-lines .line {
-  display: block;
-  height: 4px;
+@media only screen and (max-width: 600px) {
+  #mushroom-info{
+    margin-top: 30px;
+  }
+  #olli{
   width: 100%;
-  border-radius: 10px;
-  background: var(--secondary-color);
+  height: auto;
+  border-radius: 40%;
+  }
+  #card{
+    margin-top: 20px;
+  }
+#welcome-box{
+  margin-top: 50%;
+  height: 700px;
 }
-
-.hamburger-lines .line1 {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
+#portfolio-box{
+  margin-top: 15%;
+  height: 700px;
 }
-
-.hamburger-lines .line2 {
-  transition: transform 0.2s ease-in-out;
+#cv-box{
+  margin-top: 50%;
+  height: 700px;
 }
-.hamburger-lines .line3 {
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
-}
-.topmobile-nav{
-  display: block;
-  overflow: hidden;
-  color: var(--secondary-color);
-}
-.topmobile-nav a {
-  color: var(--secondary-color);
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
+#about-box{
+  margin-top: 50%;
+  height: 700px;
+  margin-bottom: 50px;
 }
 
 }
