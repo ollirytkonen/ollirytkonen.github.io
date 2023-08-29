@@ -17,21 +17,24 @@ body{
     height: 700px;
   }
   #about-box{
-    margin-top: 40%;
+    margin-top: 0%;
     margin-bottom: 20%;
     height: 700px;
   }
 #cv-box{
-  margin-top: 50%;
+  margin-top: 0%;
   height: 700px;
 }
 #mushroom-image{
-  border: solid;
-  border-radius: 2px;
+
 }
 @media only screen and (max-width: 600px) {
+*{
+    font-size: 15px;
+  }
   #mushroom-info{
     margin-top: 30px;
+    font-size: 20px;
   }
   #olli{
   width: 100%;
@@ -43,19 +46,16 @@ body{
   }
 #welcome-box{
   margin-top: 50%;
-  height: 700px;
+  font-size: 20px;
 }
 #portfolio-box{
   margin-top: 15%;
-  height: 700px;
 }
 #cv-box{
   margin-top: 50%;
-  height: 700px;
 }
 #about-box{
-  margin-top: 50%;
-  height: 700px;
+  margin-top: 20%;
   margin-bottom: 50px;
 }
 
